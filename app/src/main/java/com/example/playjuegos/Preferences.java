@@ -8,7 +8,6 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 import android.widget.SeekBar;
 import android.widget.RatingBar;
-import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 

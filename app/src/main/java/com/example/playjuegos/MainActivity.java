@@ -17,9 +17,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button games = findViewById(R.id.button);
         Button jugador = findViewById(R.id.button2);
         Button preferences = findViewById(R.id.button3);
-        Button games = findViewById(R.id.button);
+
+        games.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {lanzarGames();
+            }
+        });
         jugador.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {lanzarNewPlayer();
@@ -29,12 +35,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 lanzarPreferences();
-            }
-        });
-        games.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                lanzarGames();
             }
         });
     }
@@ -53,16 +53,16 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+    public void lanzarGames() {
+        Intent i = new Intent(this, Games.class);
+        startActivity(i);
+    }
     public void lanzarNewPlayer() {
         Intent i = new Intent(this, NewPlayer.class);
         startActivity(i);
     }
     public void lanzarPreferences() {
         Intent i = new Intent(this, Preferences.class);
-        startActivity(i);
-    }
-    public void lanzarGames() {
-        Intent i = new Intent(this, Games.class);
         startActivity(i);
     }
 }
