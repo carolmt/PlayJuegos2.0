@@ -18,10 +18,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button jugador = findViewById(R.id.button2);
+        Button preferences = findViewById(R.id.button3);
+        Button games = findViewById(R.id.button);
         jugador.setOnClickListener(new View.OnClickListener() {
             @Override
+            public void onClick(View v) {lanzarNewPlayer();
+            }
+        });
+        preferences.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-                lanzarNewPlayer();
+                lanzarPreferences();
+            }
+        });
+        games.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lanzarGames();
             }
         });
     }
@@ -42,6 +55,14 @@ public class MainActivity extends AppCompatActivity {
     }
     public void lanzarNewPlayer() {
         Intent i = new Intent(this, NewPlayer.class);
+        startActivity(i);
+    }
+    public void lanzarPreferences() {
+        Intent i = new Intent(this, Preferences.class);
+        startActivity(i);
+    }
+    public void lanzarGames() {
+        Intent i = new Intent(this, Games.class);
         startActivity(i);
     }
 }

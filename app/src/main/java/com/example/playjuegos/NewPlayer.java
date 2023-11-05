@@ -1,7 +1,6 @@
 package com.example.playjuegos;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 public class NewPlayer extends AppCompatActivity {
