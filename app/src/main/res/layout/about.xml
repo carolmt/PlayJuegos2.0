@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plataformas"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/ps4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PS4" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/pc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PC" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/xbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XBOX" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/wii"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WII" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/wiiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WIIU" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/ds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3DS" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/x360"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X360" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/plataformas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plataformas: "
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="36dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
