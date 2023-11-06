@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="@color/md_theme_light_secondaryContainer">
 
 
     <com.google.android.material.button.MaterialButton
