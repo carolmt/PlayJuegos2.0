@@ -4,7 +4,8 @@
         <item android:id="@+id/action_settings"
             android:title="@string/action_settings"
             android:orderInCategory="100"
-            app:showAsAction="never" />
+            app:showAsAction="never"
+            android:onClick="masOpciones"/>
         <item android:id="@+id/action_buscar"
             android:title="@string/action_buscar"
             android:icon="@android:drawable/ic_menu_search"

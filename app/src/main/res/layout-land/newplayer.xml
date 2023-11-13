@@ -65,12 +65,12 @@
             android:ems="10"
             android:inputType="text"
             android:text="Apodo"
-            app:layout_constraintBottom_toTopOf="@+id/imageView4"
+            app:layout_constraintBottom_toTopOf="@+id/imagenUsuario"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
             app:layout_constraintTop_toBottomOf="@+id/apellidos" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/iconoCamara"
             android:layout_width="65dp"
             android:layout_height="50dp"
             android:layout_marginStart="25dp"
@@ -80,12 +80,12 @@
             app:srcCompat="@android:drawable/ic_menu_camera" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imagenUsuario"
             android:layout_width="123dp"
             android:layout_height="87dp"
             android:layout_marginStart="15dp"
-            app:layout_constraintStart_toEndOf="@+id/imageView3"
-            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/iconoCamara"
+            app:layout_constraintTop_toTopOf="@+id/iconoCamara"
             tools:srcCompat="@tools:sample/avatars" />
 
         <Button
@@ -96,11 +96,11 @@
             android:layout_marginEnd="25dp"
             android:text="Cambiar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
-            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+            app:layout_constraintStart_toEndOf="@+id/imagenUsuario"
+            app:layout_constraintTop_toTopOf="@+id/imagenUsuario" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/iconoTelf"
             android:layout_width="65dp"
             android:layout_height="50dp"
             android:layout_marginStart="25dp"
@@ -117,8 +117,8 @@
             android:ems="10"
             android:inputType="text"
             android:text="Teléfono"
-            app:layout_constraintStart_toEndOf="@+id/imageView6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+            app:layout_constraintStart_toEndOf="@+id/iconoTelf"
+            app:layout_constraintTop_toBottomOf="@+id/imagenUsuario" />
 
         <EditText
             android:id="@+id/email"
@@ -129,11 +129,11 @@
             android:ems="10"
             android:inputType="text"
             android:text="E-mail"
-            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintStart_toEndOf="@+id/iconoEmail"
             app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
         <ImageView
-            android:id="@+id/imageView8"
+            android:id="@+id/iconoEmail"
             android:layout_width="65dp"
             android:layout_height="50dp"
             android:layout_marginStart="20dp"

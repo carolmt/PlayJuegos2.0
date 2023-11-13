@@ -53,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+    public void masOpciones(MenuItem item) {
+        Intent i = new Intent(this, MasOpciones.class);
+        startActivity(i);
+    }
     public void lanzarGames() {
         Intent i = new Intent(this, Games.class);
         startActivity(i);
@@ -65,4 +69,5 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, Preferences.class);
         startActivity(i);
     }
+
 }

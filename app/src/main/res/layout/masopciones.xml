@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MasOpciones"
+    android:background="@color/md_theme_light_secondaryContainer">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/plataformas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/athiti_semibold"
+                android:text="Plataformas: "
+                android:textColor="#595252"
+                android:textSize="23dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/plataformas"
+                tools:ignore="MissingConstraints">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/ps4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PS4" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/pc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PC" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/xbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XBOX" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/wii"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WII" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/wiiu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WIIU" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/ds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3DS" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/x360"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X360" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/genero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/athiti_semibold"
+                android:text="Género: "
+                android:textColor="#595252"
+                android:textSize="23dp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="60dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/accion"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Acción"
+                        android:textAlignment="viewStart"
+                        android:textColor="#474343"
+                        android:onClick="botonAccion"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="1dp"
+                        android:background="#BFB9B9" />
+                    <Button
+                        android:id="@+id/aventura"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aventura"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FF474343" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="1dp"
+                        android:background="#BFB9B9" />
+
+                    <Button
+                        android:id="@+id/deportes"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Deportes"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FF474343"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="1dp"
+                        android:background="#BFB9B9" />
+
+                    <Button
+                        android:id="@+id/disparos"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Disparos"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FF474343"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="1dp"
+                        android:background="#BFB9B9" />
+
+                    <Button
+                        android:id="@+id/estrategia"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Estrategia"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FF474343"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="1dp"
+                        android:background="#BFB9B9" />
+
+                    <Button
+                        android:id="@+id/lucha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lucha"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FF474343"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="1dp"
+                        android:background="#BFB9B9" />
+
+                    <Button
+                        android:id="@+id/musical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Musical"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FF474343"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="1dp"
+                        android:background="#BFB9B9" />
+
+                    <Button
+                        android:id="@+id/rol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rol"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FF474343"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="1dp"
+                        android:background="#BFB9B9" />
+
+                    <Button
+                        android:id="@+id/simulacion"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Simulación"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FF474343"
+                        app:layout_anchor="@+id/bottomAppBar"
+                        app:layout_anchorGravity="top|center" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="#F1400B"
+        app:fabAlignmentMode="center"
+        app:fabCradleMargin="4dp"
+        app:fabCradleRoundedCornerRadius="20dp"
+        app:fabCradleVerticalOffset="4dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:backgroundTint="#33C1EC"
+            app:fabCustomSize="50dp"
+            app:srcCompat="@android:drawable/ic_input_add"
+            app:useCompatPadding="false"
+            android:onClick="FABopciones"/>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
