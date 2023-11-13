@@ -42,7 +42,7 @@ public class Preferences extends AppCompatActivity {
                 if (selectedGame == null) {
                     Toast.makeText(getApplicationContext(), "No has pulsado ninguna opción", Toast.LENGTH_LONG).show();
                 } else {
-                    String message =  selectedGame + " puntuación: " + rating;
+                    String message =  selectedGame + " puntuación: " + rating + " Porcentaje: " + progress;
                     Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
                 }
             }
