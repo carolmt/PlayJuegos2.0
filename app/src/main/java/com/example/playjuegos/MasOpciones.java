@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.Toast;
 import android.view.View;
@@ -16,6 +18,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MasOpciones extends AppCompatActivity {
     private FloatingActionButton fabButton;
@@ -58,6 +61,30 @@ public class MasOpciones extends AppCompatActivity {
         wiiu = findViewById(R.id.wiiu);
         ds = findViewById(R.id.ds);
         x360 = findViewById(R.id.x360);
+
+        fabButton = findViewById(R.id.floatingActionButton);
+
+        fabButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Animation anim = new TranslateAnimation(0, 0, 0, -200);
+                anim.setDuration(500);
+                fabButton.startAnimation(anim);
+
+                anim.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {}
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        Snackbar.make(v, "El botón se desplaza hacia arriba.", Snackbar.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {}
+                });
+            }
+        });
 
         ps4.setOnClickListener(new View.OnClickListener() {
             @Override

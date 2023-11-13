@@ -256,10 +256,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:backgroundTint="#F1400B"
-        app:fabAlignmentMode="center"
-        app:fabCradleMargin="4dp"
-        app:fabCradleRoundedCornerRadius="20dp"
-        app:fabCradleVerticalOffset="4dp">
+        app:fabAnchorMode="cradle">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/floatingActionButton"
@@ -267,12 +264,11 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             app:backgroundTint="#33C1EC"
-            app:fabCustomSize="50dp"
-            app:srcCompat="@android:drawable/ic_input_add"
-            app:useCompatPadding="false"
-            android:onClick="FABopciones"/>
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_input_add"
+            app:layout_anchor = "@id/bottomAppBar"/>
+
+
     </com.google.android.material.bottomappbar.BottomAppBar>
-
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
