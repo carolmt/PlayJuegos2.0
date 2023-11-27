@@ -48,13 +48,19 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_buscar) {
-            Toast.makeText(this, "Búsqueda", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this, Generos.class);
+            startActivity(intent);
             return true;
         }
-        return super.onOptionsItemSelected(item);
+        else if (id == R.id.action_add){
+            return true;
+        }
+        else {
+            return super.onOptionsItemSelected(item);
+        }
     }
     public void masOpciones(MenuItem item) {
-        Intent i = new Intent(this, MasOpciones.class);
+        Intent i = new Intent(this, Generos.class);
         startActivity(i);
     }
     public void lanzarGames() {

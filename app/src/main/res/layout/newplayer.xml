@@ -27,8 +27,6 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="0dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@android:drawable/ic_menu_myplaces"
                 tools:ignore="MissingConstraints" />
 
@@ -43,13 +41,7 @@
                     android:layout_width="230dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    android:layout_marginEnd="10dp"
-                    app:layout_constraintBottom_toTopOf="@+id/textInputApellido"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/imageView2"
-                    app:layout_constraintTop_toTopOf="@+id/iconoUsuario"
-                    app:layout_constraintVertical_bias="0.0">
+                    android:layout_marginEnd="10dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/nombre"
@@ -66,12 +58,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
-                    app:layout_constraintBottom_toTopOf="@+id/textInputApodo"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/imageView2"
-                    app:layout_constraintTop_toBottomOf="@+id/textInputNombre">
+                    android:layout_marginEnd="10dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/apellidos"
@@ -89,12 +76,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="20dp"
-                    app:layout_constraintBottom_toTopOf="@+id/imagenUsuario"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/imageView2"
-                    app:layout_constraintTop_toBottomOf="@+id/textInputApellido">
+                    android:layout_marginBottom="20dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/apodo"
@@ -119,8 +101,6 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2"
                 app:srcCompat="@android:drawable/ic_menu_camera" />
 
             <ImageView
@@ -129,11 +109,6 @@
                 android:layout_height="87dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="20dp"
-                app:layout_constraintBottom_toTopOf="@+id/telefono"
-                app:layout_constraintEnd_toStartOf="@+id/button5"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/iconoCamara"
-                app:layout_constraintTop_toTopOf="@+id/iconoCamara"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <Button
@@ -146,10 +121,7 @@
                 android:background="#80FD9953"
                 android:text="Cambiar"
                 android:textSize="13dp"
-                android:textColorLink="#C3FFFFFF"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imagenUsuario"
-                app:layout_constraintTop_toTopOf="@+id/imagenUsuario" />
+                android:textColorLink="#C3FFFFFF" />
 
         </LinearLayout>
 
@@ -163,8 +135,6 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/telefono"
                 app:srcCompat="@android:drawable/ic_menu_call" />
             <LinearLayout
                 android:layout_width="match_parent"
@@ -178,11 +148,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginEnd="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/iconoTelf"
-                app:layout_constraintTop_toBottomOf="@+id/imagenUsuario" >
+                android:layout_marginEnd="10dp">
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/telefono2"
                     android:layout_width="match_parent"
@@ -192,17 +158,16 @@
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Spinner
-                android:id="@+id/spinner2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/telefono"
-                app:layout_constraintTop_toBottomOf="@+id/telefono"
-                tools:ignore="NotSibling" />
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+
+                    tools:ignore="NotSibling" />
             </LinearLayout>
 
 
@@ -218,11 +183,6 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/email"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textInputLayout4"
-                app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@android:drawable/sym_action_email"
                 tools:ignore="NotSibling" />
             <com.google.android.material.textfield.TextInputLayout
@@ -232,13 +192,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/iconoEmail"
-                app:layout_constraintTop_toBottomOf="@+id/spinner2"
-                app:layout_constraintVertical_bias="0.0">
+                android:layout_marginBottom="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/email"
