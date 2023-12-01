@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Button games = findViewById(R.id.button);
         Button jugador = findViewById(R.id.button2);
         Button preferences = findViewById(R.id.button3);
+        Button about = findViewById(R.id.button4);
 
         games.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,7 +38,16 @@ public class MainActivity extends AppCompatActivity {
                 lanzarPreferences();
             }
         });
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lanzarAbout();
+            }
+        });
     }
+
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
@@ -73,6 +83,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void lanzarPreferences() {
         Intent i = new Intent(this, Preferences.class);
+        startActivity(i);
+    }
+    public void lanzarAbout() {
+        Intent i = new Intent(this, About.class);
         startActivity(i);
     }
 

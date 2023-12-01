@@ -17,8 +17,6 @@ public class GenerosAdapter extends RecyclerView.Adapter<GenerosAdapter.ViewHold
 
     private String[] datosGeneros = {"Acción", "Aventura", "Deportes", "Disparos","Estrategia", "Lucha", "Musical", "Rol", "Simulación" };
 
-
-
     public static class ViewHolder extends RecyclerView.ViewHolder {
         protected TextView textoElemento;
 
